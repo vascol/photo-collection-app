@@ -15,7 +15,7 @@ const App = () => {
 
   React.useEffect(() => {
     setIsLoading(true)
-    fetch("http://localhost:3000/data.json")
+    fetch("http://photo-collection-app.vercel.app/data.json")
       .then((res) => res.json())
       .then((json) => {
         setCategories(json.categories)
